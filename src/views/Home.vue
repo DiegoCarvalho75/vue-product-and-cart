@@ -8,7 +8,7 @@
     <div></div>
     <main class="wrapper">
       <h2>
-        Recommended
+        !!!Recommended!!!
       </h2>
       <div class="recommended">
         <ProductCard

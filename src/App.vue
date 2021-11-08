@@ -1,5 +1,6 @@
 <template>
-  <header class="top-bar spread">
+
+<header class="top-bar spread">
     <nav class="top-bar-nav">
       <router-link to="/" class="top-bar-link">
         <i class="icofont-spoon-and-fork"></i>
@@ -20,10 +21,7 @@
     </div>
   </header>
 
-  <router-view
-    :inventory="inventory"
-    :addToCart="addToCart"
-  />
+  <router-view :inventory="inventory" :addToCart="addToCart" />
 
   <Sidebar
     v-if="showSidebar"
@@ -38,8 +36,6 @@
 import Sidebar from './components/Sidebar'
 import food from './food.json'
 
-console.log('sidebar: ')
-
 export default {
   components: {
     Sidebar
@@ -53,12 +49,9 @@ export default {
   },
   methods: {
     totalQuantity () {
-      return Object.values(this.cart).reduce(
-        (acc, curr) => {
-          return acc + curr
-        },
-        0
-      )
+      return Object.values(this.cart).reduce((acc, curr) => {
+        return acc + curr
+      }, 0)
     },
 
     addToCart (name, quantity) {
