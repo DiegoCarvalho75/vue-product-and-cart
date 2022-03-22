@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <product-card></product-card>
-  </div>
+  <div><product-card></product-card></div>
 </template>
 
-<script></script>
+<script setup></script>
