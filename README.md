@@ -22,3 +22,12 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Run serve for Previewing Locally 
+```
+# -s flag means serve it in Single-Page Application mode
+# which deals with the routing problem below
+serve -s dist
+```
+
